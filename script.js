@@ -1,8 +1,10 @@
 // 1. Start with the number 29 and set that equal to a variable named highScore;
-
+let highScore = 29
+console.log(highScore);
 
 // 2. Make a new empty array called myScrabbleTiles.
-
+let myScrabbleTiles = []
+console.log(myScrabbleTiles);
 
 // 3. Put these 6 tile objects into myScrabbleTiles:
 /*
@@ -13,7 +15,7 @@
   { tile: 'D', score: 2 }
   { tile: 'A', score: 1 }
 */
-
+//let tiles = {letter:, score};
 
 // 4. Remove the last tile from myScrabbleTiles and save it in a variable named removedTile.
 
