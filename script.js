@@ -60,6 +60,7 @@ console.log(calculateScore(){
 if (myScore > highScore) {
   highScore = myScore;
 };
+console.log(myScore);
 
 // DONE!
 
