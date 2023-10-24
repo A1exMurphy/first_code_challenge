@@ -15,10 +15,19 @@ console.log(myScrabbleTiles);
   { tile: 'D', score: 2 }
   { tile: 'A', score: 1 }
 */
-//let tiles = {letter:, score};
+let tile14 = {letter: "N", score: 1};
+let tile11 = {letter: "K", score: 5};
+let tile26 = {letter: "Z", score: 10};
+let tile24 = {letter: "X", score: 8};
+let tile4 = {letter: "D", score: 2};
+let tile1 = {letter: "A", score: 1};
+
+myScrabbleTiles.push("draw six tiles:", tile14, tile11, tile26, tile24, tile4, tile1);
+console.log(myScrabbleTiles);
 
 // 4. Remove the last tile from myScrabbleTiles and save it in a variable named removedTile.
-
+myScrabbleTiles.pop;
+console.log(`my last tile`, myScrabbleTiles.pop);
 
 // 5. Add the following new tile to myScrabbleTiles:
 /*
