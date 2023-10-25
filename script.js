@@ -1,5 +1,6 @@
 // 1. Start with the number 29 and set that equal to a variable named highScore;
 let highScore = 29
+let myScore
 console.log(highScore);
 
 // 2. Make a new empty array called myScrabbleTiles.
@@ -41,13 +42,25 @@ console.log("draw new tile:", newTile); // I can't figure out why this is loggin
 console.log(myScrabbleTiles);
 
 // 6. Complete this function. It needs to be given an array of tile objects. The function will use a for-loop to add up and return the sum of all the scores for a given array of scrabble tiles.
-let myScore = 0
 
-function calculateScore(myScrabbleTiles) {
-  myScrabbleTiles.forEach((myScrabbleTiles.score)=> {
-  console.log(element.score)
-  });
-  myScore += myScrabbleTiles(element.score);}
+
+
+function calculateScore(tileArray) {
+  let myScore = 0
+  for(i = 0; i < tileArray.length; i++) {
+    myScore += tileArray[i].score;
+  } return myScore;
+}
+console.log("My score", calculateScore(myScrabbleTiles));
+
+    // .forEach probably could work here but I am getting a better understanding of for loops now, so I'll save forEach for somewhere down the road.
+            // myScrabbleTiles.forEach(calculateScore(0, myScrabbleTiles[0][1], myScrabbleTiles));
+
+            // function calculateScore(myScrabbleTiles) {
+            //   myScrabbleTiles.forEach((myScrabbleTiles[.element])=> {
+            //   console.log(myScrabbleTiles.element.score)
+            //   });
+            //   myScore += myScrabbleTiles(myScrabbleTiles.element.score);}
 // calculateScore
             // console.log(calculateScore);  //I feel like I'm so close to getting this to work but I'm not certain if you can add with the forEach operator
 
@@ -57,10 +70,12 @@ function calculateScore(myScrabbleTiles) {
             // });
 
 // 8. Check whether or not your score is higher than the highScore. If your score is higher, change highScore to the new high score.
-if (myScore > highScore) {
+function checkLeaderboard(myScore) {
+  if (calculateScore(myScrabbleTiles) > highScore) {
   highScore = myScore;
-};
-console.log(myScore);
+  return myScore;
+}}
+console.log(checkLeaderboard(calculateScore(myScrabbleTiles)), "current high score!");
 
 // DONE!
 
